@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="iMlWUn" name="Groove" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn">
+  <MAINGROUP id="dJvUxa" name="Groove">
+    <GROUP id="{427CC27B-C8EE-45C1-FEA6-E924EB68B0B3}" name="Source">
+      <GROUP id="{F1E68BDB-A0BA-1A23-E2FA-D57C67015175}" name="GUI">
+        <FILE id="iM5E7p" name="GrooveContainer.cpp" compile="1" resource="0"
+              file="Source/GUI/GrooveContainer.cpp"/>
+        <FILE id="zRp2HF" name="GrooveContainer.h" compile="0" resource="0"
+              file="Source/GUI/GrooveContainer.h"/>
+        <FILE id="NCgmjK" name="SampleDisplay.cpp" compile="1" resource="0"
+              file="Source/GUI/SampleDisplay.cpp"/>
+        <FILE id="vEm8Hk" name="SampleDisplay.h" compile="0" resource="0" file="Source/GUI/SampleDisplay.h"/>
+      </GROUP>
+      <GROUP id="{D9F93954-C74A-4D5E-E3F5-0767716C3A79}" name="DSP">
+        <FILE id="t8AyJC" name="ChoppedSampleBuffer.cpp" compile="1" resource="0"
+              file="Source/DSP/ChoppedSampleBuffer.cpp"/>
+        <FILE id="tyRCNh" name="ChoppedSampleBuffer.h" compile="0" resource="0"
+              file="Source/DSP/ChoppedSampleBuffer.h"/>
+        <FILE id="zyJHPZ" name="SampleProcessor.cpp" compile="1" resource="0"
+              file="Source/DSP/SampleProcessor.cpp"/>
+        <FILE id="gGh6tV" name="SampleProcessor.h" compile="0" resource="0"
+              file="Source/DSP/SampleProcessor.h"/>
+        <FILE id="XehMp0" name="GrooveTop.h" compile="0" resource="0" file="Source/DSP/GrooveTop.h"/>
+        <FILE id="vVyIza" name="GrooveTop.cpp" compile="1" resource="0" file="Source/DSP/GrooveTop.cpp"/>
+      </GROUP>
+      <FILE id="bsifCc" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="R5GzUf" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="af4ext" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="nFNKTB" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Groove"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Groove"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../sdk/juce-7.0.2-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
